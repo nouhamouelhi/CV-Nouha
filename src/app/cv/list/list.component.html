@@ -1,0 +1,7 @@
+<ol class="list-group">
+  <li class="list-group-item">
+    <app-item *ngFor="let cv of cvs"
+      [cv]="cv" (selectItem)="forwardItem($event)"></app-item>
+  </li>
+
+</ol>
